@@ -20,7 +20,6 @@ end
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'unicorn'
-gem 'capistrano-rails', group: :development
 gem 'slim'
 gem 'slim-rails'
 gem 'html2slim'
