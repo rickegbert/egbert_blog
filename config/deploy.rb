@@ -4,7 +4,7 @@ server '54.178.225.133', port: 80, roles: [:web, :app, :db], primary: true
 
 set :application,  'egbert_blog'
 set :repo_url,     'git@github.com:rickegbert/egbert_blog.git'
-set :user,         'deploy'
+set :user,         'ubuntu'
 set :puma_threads, [4, 16]
 set :puma_workers, 0
 
