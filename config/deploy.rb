@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-server '54.178.225.133', port: 80, roles: [:web, :app, :db], primary: true
+server '54.178.225.133', port: 22, roles: [:web, :app, :db], primary: true
 
 set :application,  'egbert_blog'
 set :repo_url,     'git@github.com:rickegbert/egbert_blog.git'
