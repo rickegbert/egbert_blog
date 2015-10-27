@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-# source 'https://ruby.taobao.org'
+# source 'https://rubygems.org'
+source 'https://ruby.taobao.org'
 gem 'rails', '4.2.3'
 gem 'mysql2', '~> 0.3.18'
 gem 'sass-rails', '~> 5.0'
@@ -9,20 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-group :development, :test do
-  gem 'byebug'
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-  gem 'pry'
-  gem 'pry-rails'
-end
-
 gem 'bcrypt', '~> 3.1.7'
-gem 'unicorn'
-gem 'slim'
-gem 'slim-rails'
-gem 'html2slim'
 
 group :development do
   gem 'capistrano',         require: false
@@ -33,3 +20,20 @@ group :development do
 end
 
 gem 'puma'
+
+group :development, :test do
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+  gem 'pry'
+  gem 'pry-rails'
+end
+
+gem 'unicorn'
+gem 'slim'
+gem 'slim-rails'
+gem 'html2slim'
+gem 'font-awesome-rails'
+gem 'kaminari'
+gem 'simple_form'
+gem 'erb_to_slim'

@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+if Admin.find_by(name: 'egbert').blank?
+  admin = Admin.new(name: 'egbert', password: 'jsasdw1991', password_confirmation: 'jsasdw1991')
+  admin.save
+end

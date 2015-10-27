@@ -1,0 +1,9 @@
+- if flash[:alert].present?
+  = flash[:alert]
+= form_tag admin_logining_path, role: 'form' do
+  = text_field_tag :name, params[:name], placeholder: '请输入账户名', required: false
+  = password_field_tag :password, params[:password], placeholder: '请输入密码', required: false
+  label
+    = check_box_tag :remember_me, 1, params[:remember_me]
+    | 记住我
+  = submit_tag '登录'
